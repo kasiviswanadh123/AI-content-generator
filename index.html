@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Content Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>AI Content Generator</h1>
+
+    <div class="container">
+
+        <label>Select content type:</label>
+        <select id="contentType">
+            <option value="social media caption">Social Media Caption</option>
+            <option value="blog idea">Blog Idea</option>
+            <option value="product description">Product Description</option>
+            <option value="email template">Email Template</option>
+        </select>
+
+        <label>Enter your prompt:</label>
+        <textarea id="userInput" placeholder="Type your prompt here..."></textarea>
+
+        <button onclick="generateContent()">Generate</button>
+
+        <div id="result"></div>
+
+        <button id="copyBtn" onclick="copyOutput()">Copy Output</button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
